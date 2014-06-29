@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Minimal Django File Upload Example</title>	
+	</head>
+
+	<body>
+		<!-- List of uploaded documents -->
+		{% if UserHeaderImage %}
+			<ul>
+			{% for document in UserHeaderImage %}
+				<li><a href="{{ document.headerimage.url }}">{{ document.headerimage.name }}</a></li>
+			{% endfor %}
+			</ul>
+		{% else %}
+			<p>No documents.</p>
+		{% endif %}
+
+		<!-- Upload form. Note enctype attribute! -->
+		<form action="{% url "userheaderimageupload" %}" method="post" enctype="multipart/form-data">
+		
+			{% csrf_token %}
+			<p>{{ form.non_field_errors }}</p>
+			
+			<p>
+				{{ form.headerimage.errors }}
+				{{ form.headerimage }}
+			</p>
+			<p>idparam:<input type="text" name="id" /></p>
+			<p><input type="submit" value="Upload" /></p>
+		</form>
+		
+	</body>
+
+</html> 

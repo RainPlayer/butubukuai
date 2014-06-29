@@ -1,0 +1,25 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<!-- Upload form. Note enctype attribute! -->
+		<form action="{% url "list" %}" method="post" enctype="multipart/form-data">
+		
+			{% csrf_token %}
+			<p>{{ form.non_field_errors }}</p>
+			
+			<p>
+				{{ form.docfile.errors }}
+				{{ form.docfile }}
+			</p>
+			<p>username:<input type="text" name="username" /></p>
+			<p>article：<input type="text" name="article" /></p>
+			<p><input type="submit" value="Upload" /></p>
+		</form>
+	
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+#Wed Oct 30 16:35:31 CST 2013
+eclipse.preferences.version=1
+encoding//src/BuTuBuKuai/myapp/forms.py=utf-8
+encoding//src/BuTuBuKuai/myapp/models.py=utf-8
+encoding//src/BuTuBuKuai/myapp/serializers.py=UTF-8
+encoding//src/BuTuBuKuai/myapp/urls.py=utf-8
+encoding//src/BuTuBuKuai/myapp/views.py=utf-8
+encoding//src/BuTuBuKuai/serializers.py=UTF-8
+encoding//src/BuTuBuKuai/urls.py=UTF-8
+encoding//src/BuTuBuKuai/views.py=UTF-8
+encoding//src/HandleDb/HandleCollectionDb.py=utf-8
+encoding//src/HandleDb/HandleNHArtComment.py=utf-8
+encoding//src/HandleDb/HandleNHImageCommentDB.py=utf-8
+encoding//src/HandleDb/HandleNeiHanArticleDb.py=utf-8
+encoding//src/HandleDb/HandleNeiHanImageDb.py=utf-8
+encoding//src/HandleDb/HandlePoetryComment.py=utf-8
+encoding//src/HandleDb/HandlePoetryDb.py=utf-8
+encoding//src/HandleDb/HandleProductionDb.py=utf-8
+encoding//src/HandleDb/HandleUserDb.py=utf-8
+encoding//src/Util/GetMd5Code.py=UTF-8
